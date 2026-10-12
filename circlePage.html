@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Circle Generator - Results</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='circleStyle.css') }}">
+    </head>
+    <body>
+        <div class="results-container" style="margin-top: 20px;">
+            <p><strong>Given Radius:</strong> <span id="radiusOutput">{{ radius }}</span></p>
+            <p><strong>Area:</strong> <span id="areaOutput">{{ area }}</span></p>
+            <p><strong>Circumference:</strong> <span id="circumferenceOutput">{{ circumference }}</span></p>
+        </div>
+        
+        <a href="{{ url_for('Index') }}">
+            <button class="backButton" type="button" id="backButton">Back</button>
+        </a>
+    </body>
+</html>
